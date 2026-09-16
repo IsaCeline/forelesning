@@ -55,15 +55,15 @@ main {
 	grid-template-columns: 2fr 1fr;
 	/* grid-template-rows: ; */
 	grid-template-areas: 
-		'hovedinnhold sidepanel';
+		"hovedinnhold sidepanel";
 	gap: 1rem;
 	align-items: start;
 	grid-auto-flow: column;
 
 	.hovedinnhold {
-		grid-column-start: 1;
-		grid-column-end: 2;
-	/* 	grid-area: 'hovedinnhold'; */
+		/* grid-column-start: 1; */
+		/* grid-column-end: 2; */
+		grid-area: 'hovedinnhold';
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
 	gap: 1rem;
@@ -72,9 +72,9 @@ main {
 
 
 	.sidepanel {
-		grid-column-start: 2;
-		grid-column-end: 3;
-	/* 	grid-area: 'sidepanel'; */
+		/* grid-column-start: 2; */
+		/* grid-column-end: 3; */
+		grid-area: 'sidepanel';
 	}
 }
 
