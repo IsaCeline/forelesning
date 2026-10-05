@@ -23,7 +23,7 @@ img {
 }
 
 #logo {
-	max-width: 70px;
+	max-width: 150px;
 }
 
 header {
@@ -60,7 +60,7 @@ header {
 
 	li {
 		&::after {
-			content: " >";
+			content: " > ";
 		}
 	}
 
@@ -76,69 +76,44 @@ main {
 	grid-area: main;
 	display: flex;
 	flex-wrap: wrap;
-	/* justify-content: space-between; */
 	gap: 1rem;
 	padding: 1.5rem;
 }
 
-.left-content-container{
+.left-content-container {
 	display: flex;
 	flex-wrap: wrap;
 	gap: 1rem;
 
-
-	img{
+	img {
 		flex-basis: calc(1vw - 1rem);
 		width: 27%;
 	}
 
-	.active-img{
+	.active-img {
 		flex-basis: 100%;
 		width: 100%;
 	}
 }
 
-.flex-items{
+.flex-items {
 	flex-grow: 1;
 	flex-shrink: 1;
-	flex-basis: 320px; 
+	flex-basis: 320px;
 	min-width: 0;
-	margin: 0;	
+	margin: 0;
 }
 
-aside{
+aside {
 	grid-area: aside;
 }
 
-footer{
+footer {
 	grid-area: footer;
 }
 
-@media (min-width: 600px){
+@media (min-width: 600px) {
 	#grid-container {
-		grid-template-columns: 1fr 1fr 0.75;
-		grid-template-areas: 
-								"header header header" 
-								"nav nav nav"
-								"main main aside"
-								"footer footer footer";
-	}
-	#logo{
-		max-width: 100px;
-	}
-}
-
-@media (min-width: 1000px){
-
-	#grid-container{
-		grid-template-areas: "nav nav nav" "header header header" "aside main main" "footer footer footer";
-	}
-
-	body{
-		font-family: "comic sans ms";
-	} 
-
-	#logo{
-		max-width: 150px;
+		grid-template-areas: "header header header" "nav nav nav" "main main aside" "footer footer footer";
 	}
 }
