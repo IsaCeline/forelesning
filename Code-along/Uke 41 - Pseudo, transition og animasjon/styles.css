@@ -89,6 +89,9 @@ a {
 	font-weight: bold;
 	padding: 0.85rem 2rem;
 	border-radius: 999px;
+	transition: 
+		background-color 
+		200ms ease-in-out;
 }
 
 /* Innhold */
@@ -371,4 +374,63 @@ address {
 		grid-template-columns: repeat(3, 1fr);
 		gap: 1.75rem;
 	}
+}
+
+.hovednav a {
+	position: relative;
+}
+
+.hovednav a::after {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	height: 2px;
+	width: 0;
+	background-color: #ef8354;
+	transform: scale(1.5);
+	transition-property: width, transform;
+	transition-delay: 0;
+	transition-duration: 500ms;
+	transition-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+.hovednav a:hover::after {
+	width: 100%;
+}
+
+.hero .knapp:hover {
+	background-color: #bf5f36;
+	transform: scale(1.1);
+}
+.hero .knapp:active {
+	background-color: #904525;
+	transform: scale(0.9);
+}
+
+.menyliste li:nth-child(even) {
+	background-color: #ece3dc;
+}
+
+.menyliste li:nth-child(4)::after {
+	content: "NY";
+	position: absolute;
+	top: -0.6rem;
+	right: -0.06rem;
+	background-color: #bf5f36;
+	color: white;
+	font: 0.7rem;
+	font-weight: bold;
+	padding: 0.5rem;
+	border-radius: 8px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.om-oss p:first-of-type::first-letter {
+	font-family: "Comic Sans MS", sans-serif;
+	font-size: 3rem;
+	font-weight: bold;
+	color: #8a5c46;
+	float: left;
+	padding-right: 0.3rem;
 }
