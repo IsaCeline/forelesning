@@ -108,14 +108,18 @@ a {
 }
 
 .menu-item {
-	font-size: 12px;
+	font-size: 1rem;
 	color: #8fa596;
 	cursor: pointer;
 	white-space: nowrap;
 }
 
-.menu-item.active {
+header nav a[aria-current="page"] {
 	color: #ff6b5b;
+	text-decoration: underline;
+	text-underline-offset: 4px;
+	font-weight: bold;
+	font-size: 1.1rem;
 }
 
 .footer a {
@@ -226,7 +230,7 @@ h4 {
 	border: 1px solid #ddd5c4;
 }
 
-.form .required {
+.form {
 	border-color: #e5a29a;
 }
 
