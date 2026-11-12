@@ -1,0 +1,108 @@
+/* Oppgave 1 – Headeren */
+.sidehode {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.sidehode ul {
+	display: flex;
+	justify-content: space-between;
+}
+
+/* Oppgave 2 – Sentrering */
+#oppg-senter .lerret {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/* Oppgave 3 – Søkefeltet */
+.sok {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+}
+
+.sok input {
+	flex-grow: 1;
+	flex-shrink: 1;
+	flex-basis: 250px;
+}
+
+/* Oppgave 4 – Responsive kort */
+.kortrad {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
+	
+}
+
+.kortrad .kort {
+	flex: 1 1 250px;
+}
+
+/* Oppgave 5 – Galleri */
+.galleri {
+/* 	display: grid;
+	gap: 1rem; */
+	/* grid-template-columns: 1fr 1fr 1fr; */
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+	
+
+	
+}
+
+/* Oppgave 6 – Mosaikk */
+.mosaikk {
+	display: grid;
+	height: 100px;
+}
+
+.mosaikk .stor {
+}
+
+.mosaikk .bred {
+}
+
+.mosaikk .hoy {
+}
+
+.mosaikk .hele {
+}
+
+/* Oppgave 7 – Sidelayout med navngitte områder */
+.miniside {
+}
+
+.a-header {
+}
+
+.a-meny {
+}
+
+.a-innhold {
+}
+
+.a-footer {
+}
+
+/* Mobil: én kolonne */
+@media (max-width: 600px) {
+	.miniside {
+	}
+}
+
+/* Oppgave 8 – Footeren og skjemaet */
+.sidefot .innhold {
+	max-width: 1100px;
+	margin: 0 auto;
+}
+
+.skjema {
+}
+
+.skjema button {
+}

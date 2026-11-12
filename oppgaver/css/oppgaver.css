@@ -1,0 +1,78 @@
+/* Oppgave 1 – Headeren */
+.sidehode {
+}
+
+.sidehode ul {
+}
+
+/* Oppgave 2 – Sentrering */
+#oppg-senter .lerret {
+}
+
+/* Oppgave 3 – Søkefeltet */
+.sok {
+}
+
+.sok input {
+}
+
+/* Oppgave 4 – Responsive kort */
+.kortrad {
+}
+
+.kortrad .kort {
+}
+
+/* Oppgave 5 – Galleri */
+.galleri {
+}
+
+/* Oppgave 6 – Mosaikk */
+.mosaikk {
+}
+
+.mosaikk .stor {
+}
+
+.mosaikk .bred {
+}
+
+.mosaikk .hoy {
+}
+
+.mosaikk .hele {
+}
+
+/* Oppgave 7 – Sidelayout med navngitte områder */
+.miniside {
+}
+
+.a-header {
+}
+
+.a-meny {
+}
+
+.a-innhold {
+}
+
+.a-footer {
+}
+
+/* Mobil: én kolonne */
+@media (max-width: 600px) {
+	.miniside {
+	}
+}
+
+/* Oppgave 8 – Footeren og skjemaet */
+.sidefot .innhold {
+	max-width: 1100px;
+	margin: 0 auto;
+}
+
+.skjema {
+}
+
+.skjema button {
+}
